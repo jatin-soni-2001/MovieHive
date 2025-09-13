@@ -1,0 +1,46 @@
+{
+  "name": "moviehive",
+  "version": "1.0.0",
+  "description": "Your own personal movies, shows, and artist collection store.",
+  "main": "index.js",
+  "scripts": {
+    "build-client": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "setup-production": "npm run install-client && npm run build-client && npm run install-server",
+    "start-server": "cd server && node server.js",
+    "start-client": "cd client && npm run start",
+    "start-production": "npm run start-server",
+    "prepare": "husky install",
+    "lint": "npm-run-all lint:backend lint:frontend",
+    "lint:backend": "cd server && npm run lint:staged",
+    "lint:frontend": "cd client && npm run lint:staged",
+    "test-server": "cd server && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jatin-soni-2001/MovieHive.git"
+  },
+  "keywords": [
+    "mymovies",
+    "movie",
+    "app",
+    "pwa",
+    "movie",
+    "app",
+    "mern",
+    "stack",
+    "movie",
+    "app"
+  ],
+  "author": "Jatin Soni",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "npm-run-all": "^4.1.5"
+  }
+}
